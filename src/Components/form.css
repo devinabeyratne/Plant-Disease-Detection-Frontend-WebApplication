@@ -1,0 +1,155 @@
+/* Add some global resets and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Add Plant Container */
+  .add-plant-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-plant-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2rem;
+  }
+  
+  /* Add Plant Form */
+  .add-plant-form-container {
+    padding: 20px;
+  }
+  
+  .add-plant-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #16a085;
+  }
+  
+  .input-container1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #34495e;
+    font-weight: bold;
+  }
+  
+  .input-container1 input,
+  .input-container1 textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-container1 input:focus,
+  .input-container1 textarea:focus {
+    border-color: #16a085;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #16a085;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #13856e;
+  }
+  
+  button[type="button"] {
+    background-color: #e74c3c;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Success and Error Messages */
+  .error-message,
+  .success-message {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .success-message {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  /* Image Input Styling */
+  input[type="file"] {
+    border: none;
+  }
+  
+  .positioned-label {
+    font-size: 0.9rem;
+    color: #16a085;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #16a085;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #13856e;
+  }
+  
+  button[type="button"] {
+    background-color: #e74c3c;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #c0392b;
+  }

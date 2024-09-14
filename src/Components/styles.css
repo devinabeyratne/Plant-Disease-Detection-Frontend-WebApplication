@@ -1,0 +1,562 @@
+/* styles.css */
+
+/* Container */
+.prediction-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading */
+  .prediction-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+  }
+  
+  /* Textarea */
+  .prediction-textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button */
+  .prediction-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Prediction List */
+  .prediction-list {
+    margin-top: 20px;
+  }
+  
+  /* Prediction List item */
+  .prediction-item {
+    margin-bottom: 10px;
+  }
+
+
+
+  
+
+
+
+  .prediction-list-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .prediction-list-container h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .prediction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .prediction-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling the button */
+  .prediction-item button {
+    background-color: #007bff; /* Blue color for the button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding */
+    cursor: pointer; /* Cursor style */
+  }
+  .label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .value{
+    font-size: 14px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .prediction-item {
+      padding: 8px;
+    }
+    
+    /* Adjust button size for mobile */
+    .prediction-item button {
+      padding: 6px 12px;
+    }
+  }
+  
+
+
+
+  .total-users-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .total-users-container p {
+    margin: 10px 0;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .total-users-container {
+      width: 90%;
+    }
+  }
+
+
+/* User Pages */
+
+.user-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .logout-button {
+    margin-bottom: 90px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .user-page {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .user-page {
+      padding: 5px;
+    }
+  }
+  
+  
+  /* LogoutPage.css */
+
+.logout-button {
+    background-color: #ffffff;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #111;
+    width: 20%;
+
+
+  }
+  
+  .logout-button:hover {
+    background-color: #a5a2a2;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+
+  
+
+  
+
+/* LoginPage.css */
+
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  
+  
+}
+
+/* Login Form */
+.login-form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: -140px;
+  position: absolute;
+  margin-left: 140px;
+}
+
+.login-container h1{
+
+  font-size: 45px;
+  text-align: center;
+  margin-top: -450px;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-family:cursive;
+
+  
+
+}
+.login-form h2{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family:Georgia;
+  
+}
+
+.login-form label {
+  
+  font-size: 15px;
+  font-family:cursive;
+}
+
+
+
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none; /* Remove border */
+  border-bottom: 3px solid #ccc; /* Add bottom border */
+  border-radius: 5px; /* Remove border radius */
+  outline: none;
+  font-size: 13px;
+}
+
+.login-form button {
+  width: 97%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Photo */
+.photo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+  margin-left: -68px;
+  margin-top: 71px;
+}
+
+/* Register Link */
+.register-link {
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  font-size: 15px;
+}
+.login-form p{
+
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+  color: #0056b3;  /* Underline the link on hover */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RegisterPage.css */
+
+/* Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+/* Register Form */
+.register-form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.register-form {
+  background-color: #fff;
+  margin-top: -150px;
+  position: absolute;
+  margin-left: 140px;
+}
+
+.register-container h1 {
+  font-size: 45px;
+  text-align: left;
+  margin-top: -450px;
+  position: absolute;
+  left: 480px; /* Move the heading 20px to the left */
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+}
+
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.register-form label {
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.register-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none; /* Remove border */
+  border-bottom: 3px solid #ccc; /* Add bottom border */
+  border-radius: 5px; /* Remove border radius */
+  outline: none;
+  font-size: 13px;
+}
+
+.register-form button {
+  width: 97%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Success message */
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Login Link */
+.login-link {
+  color: #007bff; /* Link color */
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.login-link:hover {
+  
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.register-form p {
+  font-size: 15px;
+  margin-left: 5px;
+}
+/* RegisterPage.css */
+
+/* Photo */
+.photo-container2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo2 {
+  max-width: 120%;
+  max-height: 100%;
+  border-radius: 20px;
+  margin-left: -128px;
+  margin-top: 101px;
+  
+}
+
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #4CAF50;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  background-color: #e8f5e9;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  max-width: 50%;
+  border-radius: 15px;
+}
+
+.hero-text {
+  margin-left: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #1abc9c;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+/* Content Section */
+.content-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.content-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-section ul li {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+.content-image {
+  max-width: 30%;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+/* User Page Layout */
+.user-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
