@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Plant Disease Detection Web Application - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is the frontend for a plant disease detection web application built using **React.js**. It allows users to register, login, upload plant images for disease detection, manage plant and disease information, and view a dashboard. The frontend interacts with the backend via API calls and provides an easy-to-use interface for both users and administrators.
 
-## Available Scripts
+## Features
+- **User Registration and Login**: Secure user authentication.
+- **Admin and User Dashboards**: Separate views for administrators and regular users.
+- **Plant Management**: Add, view, and manage plant information.
+- **Disease Management**: Add, view, and manage plant diseases.
+- **Disease Detection**: Upload plant images to detect diseases using a pre-trained model.
+- **View Total Users**: Admin feature to view the total number of registered users.
 
-In the project directory, you can run:
+## Technologies Used
+- **React.js**: Frontend JavaScript library for building user interfaces.
+- **React Router DOM**: For handling routing between different pages.
+- **Axios**: For making HTTP requests to the backend API.
+- **Bootstrap & MDB React UI Kit**: For responsive UI components.
+- **TensorFlow.js**: For handling in-browser machine learning predictions.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository**:
+    ```bash
+    git clone https://https://github.com/devinabeyratne/Plant-Disease-Detection-Frontend-WebApplication.git
+    cd plant-disease-detection-frontend
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-### `npm test`
+3. **Run the application**:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    The app will be available at `http://localhost:3000`.
 
-### `npm run build`
+## Pages and Routes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Register Page (`/registerPage`)**: Allows new users to register.
+- **Login Page (`/`)**: Login page for existing users.
+- **Admin Page (`/adminPage`)**: Admin dashboard to manage users, plants, and diseases.
+- **User Page (`/userPage`)**: User dashboard after login.
+- **Total Users (`/totalUsers`)**: Admin view to see the total number of users.
+- **Add Plant (`/addPlant`)**: Page for adding plant information.
+- **View All Plants (`/viewAllPlants`)**: Page to view all added plants.
+- **Plant Disease Detector (`/plantDiseaseDetector`)**: Allows users to upload plant images for disease detection.
+- **Add Disease (`/addDisease`)**: Page to add new plant diseases.
+- **View Plant Diseases (`/viewPlantDiseases`)**: Page to view all plant diseases.
+- **Manage Disease (`/manageDisease`)**: Admin feature to manage plant diseases.
+- **Manage Plant (`/managePlant`)**: Admin feature to manage plants.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Important Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Axios**: Used for API calls to interact with the backend.
+- **React Router DOM**: Enables routing in the application.
+- **Bootstrap & MDB React UI Kit**: Used for styling and responsiveness.
+- **TensorFlow.js**: Handles image processing and plant disease detection within the browser.
 
-### `npm run eject`
+## Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **npm start**: Runs the app in development mode on `http://localhost:3000`.
+- **npm run build**: Builds the app for production to the `build` folder.
+- **npm test**: Launches the test runner.
+- **npm run eject**: If you need to customize the configuration, this will remove the default configurations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Ensure the backend is running to allow the frontend to interact with it.
+- The API endpoints for user registration, login, plant management, disease management, and prediction are available from the backend server running on port `5001` (or as configured).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Improvements
 
-## Learn More
+- Add more plant and disease categories to extend the coverage.
+- Improve the UI for better user experience.
+- Implement role-based access control for more granular permissions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This frontend application, when paired with the backend, provides a complete plant disease detection system that helps farmers and agricultural stakeholders identify and manage plant diseases efficiently.
